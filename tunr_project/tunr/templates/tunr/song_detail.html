@@ -1,8 +1,0 @@
-{% extends 'tunr/base.html' %} {% block content %}
-
-<h2>{{ song.title }} <a href="">(edit)</a></h2>
-<h3><a href="{% url 'song_detail' pk=song.pk %}"></a></h3>
-<h3>By: {{song.artist.name}}</h3> <!-- go to the artist for this song, get data -->
-<p>Album: {{song.album}}</p>
-
-{% endblock %}
